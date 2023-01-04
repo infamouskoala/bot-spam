@@ -9,7 +9,7 @@ times = int(input("enter the amount of messages: "))
 
 @koala.event
 async def on_ready():
-    for i in range(times):
+    while True:
         await koala.get_channel(x).send(msg)
 
 koala.run(tkn)
